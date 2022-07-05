@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERFAN SARAJ</title>
+    <link rel="icon" href="./images/ProfilePictureMaker (1).png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/f4ebe7e3ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav>
+          <h1 class="name"><a href="#">ERFAN SARAJ</a></h1>
+          <div class="toggle-button">
+            <i id="togg" class="fa-solid fa-bars"></i>
+          </div>
+          <div id="xb" class="x-button"><i class="fa-solid fa-xmark"></i></div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#proj">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a
+        class="linkedin"
+        href="https://www.linkedin.com/in/erfan-saraj-3bb9931aa/"
+        target="”_blank”"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a class="mail" href="mailto:erfan.saraj@gmail.com">
+        <i class="fa-solid fa-square-envelope"></i>
+      </a>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="navbar.js"></script>
+      <script src="./response.js"></script>
+      <div class="text-bg">
+        <h1>Erfan Saraj</h1>
+        <p class="type">An Innovator Software Engineer</p>
+      </div>
+    </header>
+    <div class="main-info" id="about">
+      <div
+        class="main-text"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-once="true"
+      >
+        <h1>About</h1>
+        <p>
+          Erfan Mehdizadeh Saraj is a third-year computer science student
+          specialized in Business at the University of Waterloo. He is
+          passionate about problem solving and continuosly learns new tools and
+          technologies to solve problems.
+        </p>
+      </div>
+      <img
+        class="erfan-img"
+        data-aos="fade-left"
+        data-aos-duration="3500"
+        data-aos-once="true"
+        src="./images/IMG_8624.JPG"
+      />
+    </div>
+    <div
+      class="project"
+      id="proj"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      data-aos-once="false"
+    >
+      <h1>Personal Projects</h1>
+    </div>
+    <div class="slideshow">
+      <div class="slideshow-item item1">
+        <div class="slideshow-item-text-1">
+          <h2>Smart Chess Engine</h2>
+          <p>
+            The chess engine is developed using c++ and follows the model view
+            controller design pattern. User can play chess with another human or
+            the computer. The user can choose to play with the computer in 4
+            levels of difficulties.
+          </p>
+        </div>
+      </div>
+      <div class="slideshow-item item2">
+        <div class="slideshow-item-text-2">
+          <h2>Instagram Follower Bot</h2>
+          <p>
+            The bot is designed to boost followers and interactions of small
+            busineses and start-ups on Instagram, which is one of the best
+            platforms to introduce and promote new ideas, services, and
+            products. It is created by UiPath studio and is easily customizable
+            to customers needs.
+          </p>
+        </div>
+      </div>
+      <div class="slideshow-item item3">
+        <div class="slideshow-item-text-1">
+          <h2>Travel Info Web</h2>
+          <p>
+            A joint platform with intention to help users to decide the best
+            travel destination based on their budget and preferences. This
+            platform provide best travel suggestions considering A to Z of a
+            trip. From booking a flight and accomodation to travel document
+            requirements, they are all covered in this web application using
+            public APIs.
+          </p>
+        </div>
+      </div>
+      <div class="slideshow-item item4">
+        <div class="slideshow-item-text-2">
+          <h2>Auto Stock Price</h2>
+          <p>
+            Getting instant stock prices on an Excel sheet is super important
+            for traders. Auto Stock Price, is designed to gather all stock
+            prices that you need instantly and copy them to your Excel file. It
+            is designed with UiPath automation tool and gets data directly from
+            Google.
+          </p>
+        </div>
+      </div>
+      <div class="slideshow-item item5">
+        <div class="slideshow-item-text-1">
+          <h2>C++ Compiler</h2>
+          <p>
+            A full compiler designed for a low level programming language called
+            WLP4 which is derieved from C++. It covers all compiling steps from
+            scanning and parsing to code generation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="form-container"
+      id="contact"
+      data-aos="zoom-in"
+      data-aos-duration="3000"
+      data-aos-once="false"
+    >
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h1>Get In Touch</h1>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea
+          id="message"
+          rows="30"
+          placeholder="Message"
+          maxlength="200"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="sts" class="status">
+        Thanks, your message is submitted to Erfan
+      </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="submit.js"></script>
+    <footer>
+      <p><i class="fa-regular fa-copyright"></i> 2022 By Erfan Saraj</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
